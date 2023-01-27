@@ -1,0 +1,8 @@
+[alias]
+  br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+  save = !git add -A && git commit -a -m 'chore: commit save point' --no-edit
+  done = !git push origin HEAD
+  co = checkout
+  amend = commit -a --amend
+  fixup = commit -a --amend --no-edit
+  ff = pull --ff-only
